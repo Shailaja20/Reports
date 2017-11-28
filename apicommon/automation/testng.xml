@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<suite name="Suite" verbose="2" parallel="tests" thread-count="2">
+	  <parameter name="application" value="apttusCloud" />
+  <parameter name="runParallel" value="false" />
+  <parameter name="environment" value="config.properties" />
+  <parameter name="browser" value="Chrome" />
+  <parameter name="hubURL" value="http://localhost:4444/wd/hub" />
+
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="com.apttus.extent.report.ExtentTestNGIReporterListener" />
+	</listeners>
+
+	<test name="Unified Platform Demo Test" group-by-instances="true">
+		<groups>
+			<run>
+				<!-- <include name="PricingProduct"/> <include name="PriceList"/> -->
+				<include name="API" />
+				<include name="UI" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.apttus.automation" />
+		</packages>
+	</test>
+</suite>

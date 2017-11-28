@@ -1,0 +1,6 @@
+/.metadata/
+automation/target/test-classes/com/apttus/automation/AppTest.class
+automation/target/classes/com/apttus/restAssured/RestUtils.class
+automation/target/classes/com/apttus/jasmine/JasmineHelper.class
+automation/target/classes/com/apttus/helpers/JavaHelpers.class
+automation/target/classes/com/apttus/automation/App.class

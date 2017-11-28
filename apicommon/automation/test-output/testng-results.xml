@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="40434" started-at="2017-11-24T09:55:40Z" finished-at="2017-11-24T09:56:20Z">
+    <groups>
+      <group name="API">
+        <method signature="SampleAPITests.cloneReport()[pri:2, instance:com.apttus.automation.SampleAPITests@59906517]" name="cloneReport" class="com.apttus.automation.SampleAPITests"/>
+      </group> <!-- API -->
+    </groups>
+    <test name="Unified Platform Demo Test" duration-ms="40434" started-at="2017-11-24T09:55:40Z" finished-at="2017-11-24T09:56:20Z">
+      <class name="com.apttus.automation.SampleAPITests">
+        <test-method status="PASS" signature="tokenGenerations(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.apttus.automation.SampleAPITests@59906517]" name="tokenGenerations" is-config="true" duration-ms="37218" started-at="2017-11-24T15:25:40Z" finished-at="2017-11-24T15:26:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[config.properties]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[http://localhost:4444/wd/hub]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tokenGenerations -->
+        <test-method status="FAIL" signature="cloneReport()[pri:2, instance:com.apttus.automation.SampleAPITests@59906517]" name="cloneReport" duration-ms="3175" started-at="2017-11-24T15:26:17Z" description="Clone Report Definition" finished-at="2017-11-24T15:26:20Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [200] but found [404]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:389)
+	at org.testng.Assert.assertEquals(Assert.java:399)
+	at com.apttus.automation.SampleAPITests.cloneReport(SampleAPITests.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cloneReport -->
+      </class> <!-- com.apttus.automation.SampleAPITests -->
+    </test> <!-- Unified Platform Demo Test -->
+  </suite> <!-- Suite -->
+</testng-results>

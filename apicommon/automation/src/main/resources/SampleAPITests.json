@@ -1,0 +1,31 @@
+{
+	"generateReport": {
+		"selectData": "Name",
+		"offset": "1",
+		"limit": "50",
+		"getCount": "true"
+	},
+
+	"createReport": {
+		"ObjectId": "clm_Agreement",
+		"PackageId": "clm",
+		"Name": "Demo Report",
+		"Type": "Report",
+		"Active": true,
+		"IsSystem": false,
+		"IsTemplate": false,
+		"IsAQLQuery": true,
+		"EntityName": "clm_Agreement",
+		"Id": "1fab997f-f0c9-e711-80c2-0004ffb07b92",
+		"IsActive": false
+	},
+	
+	"cloneReport": {
+	  "ObjectId": "c91ed807-a5e5-479e-a55d-82ab2e8f4425",
+  	  "PackageId": "74c3ebe6-c167-4b87-9faa-e447538fada5",
+      "EntityName": "clm_Agreement",
+      "IsActive": true,
+      "Type": "OOTB - Base",
+      "Name": "Sample Report"
+	}
+}
